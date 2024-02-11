@@ -1,17 +1,6 @@
-
-
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'montserrat', sans-serif;
- ----------------------------------------*****/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -23,7 +12,13 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- Custom Styles ---------------------------------------------------------------------*/
+
+/* Aplica la fuente Lato a todos los elementos de la página */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span {
+    font-family: 'Lato', sans-serif;
+}
+
 
 * {
      box-sizing: border-box !important;
@@ -34,7 +29,7 @@ html {
 }
 
 body {
-     color: #f2f0f0;
+     color: #070707;
      font-size: 14px;
      font-family: 'Archivo';
      line-height: 1.80857;
@@ -230,7 +225,7 @@ button {
 }
 
 .theme_bg {
-     background: #1d1c1c; /* Cambio de color de fondo a blanco suave */
+     background: #bebdbd; /* Cambio de color de fondo a blanco suave */
      color: #000000; /* Cambio de color del texto a negro */
 }
 
@@ -313,7 +308,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: #e2dfdf;
+     background: #dadada;
      width: 100%;
      padding: 40px 40px 40px 40px;
 }
@@ -325,38 +320,74 @@ button {
      
  }
 .banner_main {
-     background: #f2f1f1;
+     background: #dadada;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding-bottom: 90px;
 }
 
 .text-bg h1 {
-     color: #fff;
-     font-size: 60px;
-     line-height: 80px;
-     padding-bottom: 25px;
+     color: #2a2929;
+     font-size: 25px;
+     line-height:  25px;
+     padding-bottom: 5px;
+     padding-top: 30%;
      font-weight: bold;
 }
 
-.text-bg span {
-     color: #2f2230;
-     font-size: 40px;
-     line-height: 35px;
-     font-weight: bold;
-}
+
 
 .text-bg p {
-     color: #fff;
-     font-size: 40px;
-     line-height: 50px;
-     padding: 70px 0;
+     color: #2a2929;
+     font-size: 25px;
+     line-height: 25px;
+     padding: 25px 0;
+     font-weight: 'regular';
 }
-
+button {
+     display: inline-block;
+     border-radius: 4px;
+     background-color: #F55AA5;
+     border: none;
+     color: #FFFFFF;
+     text-align: center;
+     font-size: 15px; /* Reducir el tamaño del texto */
+     padding: 16px;
+     width: 250px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 5px;
+ }
+ 
+ button span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ button span:after {
+     content: '»';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -15px;
+     transition: 0.5s;
+ }
+ 
+ button:hover span {
+     padding-right: 15px;
+ }
+ 
+ button:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
+ 
 .text-bg a {
      font-size: 16px;
-     background-color: #f8f3f3;
-     color: #ddd7d7;
+     background-color: #070707;
+     color: #070707;
      padding: 10px 0px;
      width: 100%;
      max-width: 190px;
@@ -364,6 +395,7 @@ button {
      display: inline-block;
      text-transform: uppercase;
 }
+
 
 .text-bg a:hover {
      background-color: #ddd7d7;
@@ -451,9 +483,9 @@ button {
 /* === Sección de Servicios === */
 /* Ajustes para hacer los iconos más grandes */
 .Services {
-     margin-top: 120px; /* Aumento del margen superior para separar más la sección */
+     margin-top: 0px; /* Aumento del margen superior para separar más la sección */
      padding: 100px 30px; /* Aumento del relleno para dar más espacio al contenido */
-     background: #999696;
+     background: #292828;
      font-family: 'montserrat', sans-serif;
      line-height: 1.5;
      /* Comentario: Sección de servicios */
@@ -499,8 +531,8 @@ button {
  .Services .Services-box {
      text-align: center;
      background-color: transparent;
-     border-radius: 20px;
-     border: #cecfd7 solid 2px;
+     border-radius: 5px;
+     border: #242424 solid 2px;
      padding: 40px; /* Aumento del relleno para centrar más los contenidos */
      transition: ease-in all 0.5s;
      margin-bottom: 40px; /* Aumento del margen inferior para separar más las cajas */
