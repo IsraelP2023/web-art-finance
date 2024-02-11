@@ -34,7 +34,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #f2f0f0;
      font-size: 14px;
      font-family: 'Archivo';
      line-height: 1.80857;
@@ -126,9 +126,10 @@ ol {
 
 
 .mi-parrafo {
+     margin: 0%;
      margin-top: 100px;
      font-weight: 500;
-     font-size: 20px;
+     font-size: 18px;
      line-height: 30px;
      text-align: center;
 }
@@ -162,9 +163,9 @@ a,
 img {
      max-width: 100%;
      height: auto;
-     float: left; /* Agrega esta línea para posicionar la imagen a la izquierda */
- }
- :focus {
+     float: left;
+}
+:focus {
      outline: 0;
 }
 
@@ -179,14 +180,14 @@ img {
 .lead {
      font-size: 18px;
      line-height: 30px;
-     color: #767676;
+     color: #ededed;
      margin: 0;
      padding: 0;
 }
 
 .form-control:focus {
      border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+     box-shadow: 0 0 0 .2rem rgba(224, 222, 222, 0.25);
 }
 
 .navbar-form input {
@@ -225,12 +226,14 @@ button {
 }
 
 .light_silver {
-     background: #f9f9f9;
+     background: #f1eded;
 }
 
 .theme_bg {
-     background: #38c8a8;
+     background: #1d1c1c; /* Cambio de color de fondo a blanco suave */
+     color: #000000; /* Cambio de color del texto a negro */
 }
+
 
 .margin_top_30 {
      margin-top: 30px !important;
@@ -276,31 +279,32 @@ button {
 /*-- navigation--*/
 .navigation.navbar {
      float: right;
-     margin-top: 60px; /* Puedes ajustar este valor según tus necesidades para bajar el menú */
+     margin-top: 60px;
  }
  
  .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 50px;
-     color: #fff;
+     color: #171717;
      font-size: 16px;
      line-height: 30px;
  }
  
  .navigation.navbar-dark .navbar-nav .nav-link:focus,
  .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #FACF00;
+     color: #151515;
  }
  
  .navigation.navbar-dark .navbar-nav .active>.nav-link,
  .navigation.navbar-dark .navbar-nav .nav-link.active,
  .navigation.navbar-dark .navbar-nav .nav-link.show,
  .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #FACF00;
+     color: #151515;
  }
  
 
 
 /*-- header area --*/
+
 
 
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
@@ -309,7 +313,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: #454444;
+     background: #e2dfdf;
      width: 100%;
      padding: 40px 40px 40px 40px;
 }
@@ -321,7 +325,7 @@ button {
      
  }
 .banner_main {
-     background: #454444;
+     background: #f2f1f1;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding-bottom: 90px;
@@ -336,7 +340,7 @@ button {
 }
 
 .text-bg span {
-     color: #FACF00;
+     color: #2f2230;
      font-size: 40px;
      line-height: 35px;
      font-weight: bold;
@@ -351,8 +355,8 @@ button {
 
 .text-bg a {
      font-size: 16px;
-     background-color: #fff;
-     color: #000;
+     background-color: #f8f3f3;
+     color: #ddd7d7;
      padding: 10px 0px;
      width: 100%;
      max-width: 190px;
@@ -362,7 +366,7 @@ button {
 }
 
 .text-bg a:hover {
-     background-color: #000;
+     background-color: #ddd7d7;
      color: #fff;
 }
 
@@ -391,7 +395,7 @@ button {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #292b3a;
+     color: #e4e5ea;
      line-height: 40px;
      font-weight: bold;
      padding: 0;
@@ -415,7 +419,7 @@ button {
 
 .web_hosting p {
      
-     color: #454444;
+     color: #fdf6f6;
      font-size: 20px;
      line-height: 30px;
      padding: 10px 50px;
