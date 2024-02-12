@@ -479,24 +479,22 @@ button {
      
 }
 /** end Hosting section **/
-
-/* Ajustes para hacer los iconos más grandes */
 .Services {
-     margin-top: 0px; /* Aumento del margen superior para separar más la sección */
-     padding: 100px 30px; /* Aumento del relleno para dar más espacio al contenido */
+     margin-top: 0px;
+     padding: 100px 30px;
      background: #292828;
      font-family: 'Lato', 'regular';
      line-height: 1.5;
-     /* Comentario: Sección de servicios */
  }
  
  .Services .titlepage {
      text-align: center;
+     margin-top: 10px;
  }
  
  .Services .titlepage h2 {
      color: #fff;
-     padding-bottom: 30px;
+     padding-bottom: 50px; /* Separación entre el título y la imagen */
  }
  
  .Services .titlepage p {
@@ -508,11 +506,11 @@ button {
      background-color: transparent;
      border-radius: 5px;
      border: #242424 solid 2px;
-     padding: 100px; /* Aumento del relleno para centrar más los contenidos */
+     padding: 20px;
      transition: ease-in all 0.5s;
-     margin-bottom: 40px; /* Aumento del margen inferior para separar más las cajas */
-     position: relative; /* Agregado para posicionar correctamente las imágenes */
-     overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+     margin-bottom: 40px; /* Puedes ajustar este valor si necesitas más espacio debajo de cada caja */
+     position: relative;
+     overflow: hidden;
  }
  
  .Services .Services-box:hover {
@@ -521,30 +519,32 @@ button {
  }
  
  .Services .Services-box p {
-     font-size: 18px; /* Tamaño del texto aumentado */
-     line-height: 28px; /* Altura de línea del texto aumentada */
+     font-size: 18px;
+     line-height: 28px; /* Aumento de la altura de línea para más espacio entre el texto y la imagen */
      color: #fff;
+     margin-top: 20px; /* Separación entre la imagen y el texto debajo de ella */
  }
- 
  
  /* Ajustes para las imágenes de servicios */
  
  .Services .Services-box img {
-     margin-bottom: 0px;
-     position: absolute;
-     top: 50%; /* Centra verticalmente la imagen */
-     left: 50%;
-     transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la imagen */
-     width: auto; /* Usa el ancho original de la imagen */
-     max-width: 100%; /* Limita el ancho máximo al 100% del contenedor */
-     height: auto; /* Mantiene la proporción de la imagen */
-     max-height: 100%; /* Limita la altura máxima al 100% del contenedor */
-     z-index: 1; /* Asegura que la imagen esté detrás del contenido de texto */
+     margin-bottom: 20px; /* Separación entre la imagen y el título de contenido */
+     position: relative;
+     display: block;
+     width: 100%;
+     height: auto;
+     border-radius: 5px;
  }
  
  .Services .Services-box .content {
-     position: relative;
-     z-index: 2; /* Asegura que el contenido de texto esté por encima de la imagen */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     text-align: center;
+     color: #fff;
+     padding: 20px;
  }
  
  
